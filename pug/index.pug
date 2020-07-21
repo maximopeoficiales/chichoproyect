@@ -1,0 +1,157 @@
+doctype html
+head
+     // Required meta tags
+     meta(charset='utf-8')
+     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+     link(rel='shortcut icon' href='/img/gato.ico' type='image/x-icon')
+     // Bootstrap CSS
+     link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+     script(src='https://kit.fontawesome.com/b5b7f00aae.js' crossorigin='anonymous')     
+     link(rel='stylesheet' href='css/styles.css' crossorigin='anonymous')
+
+     title ChichoProyects &#x1F639;
+body
+     header
+          nav.navbar.navbar-expand-md.navbar-light.bg-light.fixed-top
+               a.navbar-brand(href='#')
+                    img.d-inline-block.align-top(src='/img/gato.ico' width='30' height='30' alt='' loading='lazy')
+                    |  ChichoProyects
+               button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+               #navbarNav.collapse.navbar-collapse.float-rigth
+                    ul.navbar-nav.ml-auto
+                         li.nav-item.active
+                              a.nav-link(href='#SobreMi')
+                                   | Sobre Mí 
+                                   span.sr-only (current)
+                         li.nav-item
+                              a.nav-link(href='#Proyectos') Proyectos
+                         li.nav-item
+                              a.nav-link(href='#Servicios') Servicios
+                         li.nav-item
+                              a.nav-link(href='#Contacto') Contacto
+          br
+          .container
+               .row.my-4
+                    .col-md-12
+                         .d-flex.flex-column.justify-content-center.align-items-center.p-4      
+                              div.rounded-circle.my-4
+                                   img(src="img/logo.png" alt="alt" class=(""))
+                              h4.titulo_nombre.my-4 Maximo Junior Apaza Chirhuana
+                              h1.titulo_carrera.my-2  
+                                   span.typed
+                              h4.especialidades.my-2 Laravel | Node JS
+                              h4.especialidades.my-2 React-JS | Boostrap | MySql | MongoDB | Git
+                              br
+                              button.btn.btn-lg.btn-success.btn-color-custom Contactame
+     hr
+     main.container.my-4
+          h2.text-center.my-4.subtitulo(id="SobreMi") Sobre Mí
+          .row
+               .col-md-6.p-3
+                    img.img-fluid(src="img/sobremi.svg" alt="alt")
+               .col-md-6.p-3.text-justify
+                    h4.subtitulo-h4.my-2 Algunas Palabras...
+                    p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
+
+                    p Soy desarrollador web, me fascina la programacion y la informatica #[b desde los 16 años.] Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
+
+                    p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
+                    .text-center                        
+                         button.btn.btn-lg.btn-success.btn-color-custom 
+                              |<i class="far fa-file-alt"></i> Descargar CV
+
+          hr
+          h2.text-center.my-4.subtitulo  Mis Habilidades
+          .row
+               .col-md-6.p-3
+                    h4.subtitulo-h4.my-4 En lo mejor que me desempeño...
+                    p Javascript
+                         .progress
+                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+                    p PHP
+                         .progress
+                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+
+                    p SQL
+                         .progress
+                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+
+
+
+
+               .col-md-6.p-3.text-justify
+                    img.img-fluid(src="img/lenguajes2.svg" alt="alt")
+
+          hr
+          h2.text-center.my-4.subtitulo(id="Servicios") Mis Servicios   
+          .row    
+               .col-lg-4
+                    .card-custom
+                         .card-font
+                              <i class="fas fa-code"></i>
+                         .card-footer-custom
+                              .card-name
+                                   h4 Desarrollo Frontend
+                              .card-description     
+                                   p Hermosas e Impresionantes Paginas Responsivas
+               .col-lg-4
+                    .card-custom
+                         .card-font
+                              <i class="fas fa-server"></i>
+                         .card-footer-custom
+                              .card-name
+                                   h4 Desarrollo Backend
+                              .card-description     
+                                   p API REST con Node JS, Laravel
+               .col-lg-4
+                    .card-custom
+                         .card-font
+                              <i class="fas fa-laptop-code"></i>
+                         .card-footer-custom
+                              .card-name
+                                   h4 Soporte de Proyectos
+                              .card-description     
+                                   p Optimizacion y Soluciones de Codigo
+
+          hr
+          h2.text-center.my-4.subtitulov(id="Proyectos")  Mis Proyectos
+          .row
+               .col-md-6.col-lg-4
+                    .card-custom
+                         img.card-img.img-fluid(src="img/lenguajes2.svg" alt="alt" loading="lazy")
+                         .card-footer-custom
+                              .card-name
+                                   h4 Algun Nombre
+                              .card-description     
+                                   p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.
+                              button.btn.btn-lg.btn-success.btn-color-custom <i class="far fa-eye"></i> Ver
+
+               .col-md-6.col-lg-4
+                    .card-custom
+                         img.card-img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
+                         .card-footer-custom
+                              .card-name
+                                   h4 Algun Nombre
+                              .card-description     
+                                   p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.
+                              button.btn.btn-lg.btn-success.btn-color-custom <i class="far fa-eye"></i> Ver
+               .col-md-6.col-lg-4
+                    .card-custom
+                         img.card-img.img-fluid(src="img/proyect3.svg" alt="alt" loading="lazy")
+                         .card-footer-custom
+                              .card-name
+                                   h4 Algun Nombre
+                              .card-description     
+                                   p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.
+                              button.btn.btn-lg.btn-success.btn-color-custom <i class="far fa-eye"></i> Ver
+          .row.my-2
+               .col-lg-3
+               .col-lg-6
+                    button.btn.btn-lg.btn-block.btn-success.btn-color-custom Ver Todos los Proyectos
+               .col-lg-3
+script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+script(src='js/configuraciontyped.js')
