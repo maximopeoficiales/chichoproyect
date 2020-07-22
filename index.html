@@ -22,18 +22,16 @@
           <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
         </ul>
       </div>
-    </nav><br>
-    <div class="container">
-      <div class="row my-4">
-        <div class="col-md-12">
-          <div class="d-flex flex-column justify-content-center align-items-center p-4">     
-            <div class="rounded-circle my-4"><img src="img/logo.png" alt="alt"></div>
-            <h4 class="titulo_nombre my-4">Maximo Junior Apaza Chirhuana</h4>
-            <h1 class="titulo_carrera my-2"> <span class="typed"></span></h1>
-            <h4 class="especialidades my-2">Laravel | Node JS</h4>
-            <h4 class="especialidades my-2">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
-            <button class="btn btn-lg btn-success btn-color-custom">Contactame</button>
-          </div>
+    </nav><br><br>
+    <div class="portada">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="rounded-circle my-4"><img src="img/logo.png" alt="alt"></div>
+          <h4 class="titulo_nombre my-4">Maximo Junior Apaza Chirhuana</h4>
+          <h1 class="titulo_carrera my-2"> <span class="typed"></span></h1>
+          <h4 class="especialidades my-2">Laravel | Node JS</h4>
+          <h4 class="especialidades my-2">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
+          <button class="btn btn-lg btn-success btn-color-custom">Contactame</button>
         </div>
       </div>
     </div>
@@ -42,7 +40,7 @@
   <main class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="SobreMi">Sobre Mí</h2>
     <div class="row">
-      <div class="col-md-6 p-3"><img class="img-fluid" src="img/sobremi.svg" alt="alt"></div>
+      <div class="col-md-6 p-3 d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/sobremi.svg" alt="alt"></div>
       <div class="col-md-6 p-3 text-justify">
         <h4 class="subtitulo-h4 my-2">Algunas Palabras...</h4>
         <p>Soy un joven <b>muy responsable</b>, feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.</p>
@@ -78,6 +76,61 @@
       <div class="col-md-6 p-3 text-justify"><img class="img-fluid" src="img/lenguajes2.svg" alt="alt"></div>
     </div>
     <hr>
+  </main>
+  <section class="container-custom my-4">
+    <h2 class="text-center my-4 subtitulo" id="Proyectos"> Mis Proyectos</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="efecto-proyect">
+          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+            <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
+          </div>
+          <div class="card-proyect-name text-center">
+            <h4>Tiendas Virtuales</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="efecto-proyect">
+          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+            <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
+          </div>
+          <div class="card-proyect-name text-center">
+            <h4>App de Encuestas</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="efecto-proyect">
+          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+            <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
+          </div>
+          <div class="card-proyect-name text-center">
+            <h4>Modulos para Wari HC</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="efecto-proyect">
+          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+            <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
+          </div>
+          <div class="card-proyect-name text-center">
+            <h4>Sistemas de Ventas Web</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <button class="btn btn-lg btn-block btn-success btn-color-custom">Ver Todos los Proyectos</button>
+      </div>
+      <div class="col-lg-3">  </div>
+    </div>
+    <hr class="container">
+  </section>
+  <section class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="Servicios">Mis Servicios   </h2>
     <div class="row">   
       <div class="col-lg-4">
@@ -121,56 +174,10 @@
       </div>
     </div>
     <hr>
-    <h2 class="text-center my-4 subtitulov" id="Proyectos"> Mis Proyectos</h2>
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="card-custom"><img class="card-img img-fluid" src="img/lenguajes2.svg" alt="alt" loading="lazy">
-          <div class="card-footer-custom">
-            <div class="card-name">
-              <h4>Algun Nombre</h4>
-            </div>
-            <div class="card-description">    
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.</p>
-            </div>
-            <button class="btn btn-lg btn-success btn-color-custom"><i class="far fa-eye"></i> Ver</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-custom"><img class="card-img img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
-          <div class="card-footer-custom">
-            <div class="card-name">
-              <h4>Algun Nombre</h4>
-            </div>
-            <div class="card-description">    
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.</p>
-            </div>
-            <button class="btn btn-lg btn-success btn-color-custom"><i class="far fa-eye"></i> Ver</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card-custom"><img class="card-img img-fluid" src="img/proyect3.svg" alt="alt" loading="lazy">
-          <div class="card-footer-custom">
-            <div class="card-name">
-              <h4>Algun Nombre</h4>
-            </div>
-            <div class="card-description">    
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae.</p>
-            </div>
-            <button class="btn btn-lg btn-success btn-color-custom"><i class="far fa-eye"></i> Ver</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row my-2">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-6">
-        <button class="btn btn-lg btn-block btn-success btn-color-custom">Ver Todos los Proyectos</button>
-      </div>
-      <div class="col-lg-3"></div>
-    </div>
-  </main>
+  </section>
+  <section class="container my-4">
+    <h2 class="text-center my-4 subtitulo" id="Contacto">Contacto</h2>
+  </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
