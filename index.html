@@ -7,6 +7,7 @@
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/b5b7f00aae.js" crossorigin="anonymous">    </script>
+  <link rel="stylesheet" href="css/spinner.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
   <title>ChichoProyects &#x1F639;</title>
 </head>
@@ -14,7 +15,7 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="img/gato.ico" width="30" height="30" alt="" loading="lazy"> ChichoProyects</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse float-rigth" id="navbarNav">
+      <div class="collapse navbar-collapse float-right" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a class="nav-link" href="#SobreMi">Sobre Mí <span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#Proyectos">Proyectos</a></li>
@@ -23,36 +24,48 @@
         </ul>
       </div>
     </nav><br><br>
-    <div class="portada">
+    <div class="portada p-4">
       <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <div class="rounded-circle my-4"><img src="img/logo.png" alt="alt"></div>
-          <h4 class="titulo_nombre my-4">Maximo Junior Apaza Chirhuana</h4>
-          <h1 class="titulo_carrera my-2"> <span class="typed"></span></h1>
-          <h4 class="especialidades my-2">Laravel | Node JS</h4>
-          <h4 class="especialidades my-2">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
-          <button class="btn btn-lg btn-success btn-color-custom">Contactame</button>
+          <h1 class="titulo_nombre my-4">Maximo Junior Apaza Chirhuana</h1>
+          <h3 class="titulo_carrera my-2"><span class="typed"></span></h3>
+          <h4 class="especialidades my-2 f-20">Laravel | Node JS</h4>
+          <h4 class="especialidades my-2 f-20">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
+          <button class="btn btn-lg btn-color-custom f-20">Contactame</button>
         </div>
       </div>
     </div>
   </header>
-  <hr>
   <main class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="SobreMi">Sobre Mí</h2>
     <div class="row">
-      <div class="col-md-6 p-3 d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/sobremi.svg" alt="alt"></div>
+      <div class="col-md-6 p-3 d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/sobremi.svg" alt="alt" loading="lazy"></div>
       <div class="col-md-6 p-3 text-justify">
         <h4 class="subtitulo-h4 my-2">Algunas Palabras...</h4>
         <p>Soy un joven <b>muy responsable</b>, feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.</p>
         <p>Soy desarrollador web, me fascina la programacion y la informatica <b>desde los 16 años.</b> Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.</p>
         <p>Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.</p>
         <div class="text-center">                       
-          <button class="btn btn-lg btn-success btn-color-custom">
+          <button class="btn btn-lg btn-color-custom">
              <i class="far fa-file-alt"></i> Descargar CV</button>
         </div>
       </div>
     </div>
-    <hr>
+    <div class="row">
+      <div class="col-md-6 p-3">
+        <h4 class="subtitulo-h4 my-2 text-left">Una breve descripcion...</h4>
+        <p>Soy un joven <b>muy responsable</b>, feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.</p>
+        <p>Soy desarrollador web, me fascina la programacion y la informatica <b>desde los 16 años.</b> Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.</p>
+        <p>Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.</p>
+      </div>
+      <div class="col-md-6 p-3 d-flex flex-column justify-content-center f-19">
+        <p><i class="fas fa-user-tie color-principal"></i> <b>Edad Actual :</b>  <span id="edad">28</span></p>
+        <p><i class="fas fa-map-marked-alt color-principal"></i> <b>Ubicación :</b> Lima, Perú</p>
+        <p><i class="fas fa-laptop-code color-principal"></i> <b>Stack :</b> Node JS,React Js,Mysql</p>
+        <p><i class="fas fa-grin-hearts color-principal"></i> <b>Intereses :</b> Desarrollo Web,Musica Rock,Videojuegos</p>
+      </div>
+    </div>
     <h2 class="text-center my-4 subtitulo"> Mis Habilidades</h2>
     <div class="row">
       <div class="col-md-6 p-3">
@@ -73,12 +86,12 @@
           </div>
         </p>
       </div>
-      <div class="col-md-6 p-3 text-justify"><img class="img-fluid" src="img/lenguajes2.svg" alt="alt"></div>
+      <div class="col-md-6 p-3 text-justify d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/lenguajes2.svg" alt="alt"></div>
     </div>
     <hr>
   </main>
   <section class="container-custom my-4">
-    <h2 class="text-center my-4 subtitulo" id="Proyectos"> Mis Proyectos</h2>
+    <h2 class="text-center my-4 subtitulo" id="Proyectos"> Proyectos Destacados</h2>
     <div class="row">
       <div class="col-md-6 col-lg-6">
         <div class="efecto-proyect">
@@ -124,7 +137,7 @@
     <div class="row my-4">
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
-        <button class="btn btn-lg btn-block btn-success btn-color-custom">Ver Todos los Proyectos</button>
+        <button class="btn btn-lg btn-block btn-color-custom">Ver Todos los Proyectos</button>
       </div>
       <div class="col-lg-3">  </div>
     </div>
@@ -133,7 +146,7 @@
   <section class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="Servicios">Mis Servicios   </h2>
     <div class="row">   
-      <div class="col-lg-4">
+      <div class="col-md-4 col-lg-4">
         <div class="card-custom">
           <div class="card-font"><i class="fas fa-code"></i></div>
           <div class="card-footer-custom">
@@ -141,12 +154,12 @@
               <h4>Desarrollo Frontend</h4>
             </div>
             <div class="card-description">    
-              <p>Hermosas e Impresionantes Paginas Responsivas</p>
+              <p>Impresionantes Paginas Responsivas</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4 col-lg-4">
         <div class="card-custom">
           <div class="card-font"><i class="fas fa-server"></i></div>
           <div class="card-footer-custom">
@@ -159,7 +172,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-md-4 col-lg-4">
         <div class="card-custom">
           <div class="card-font"><i class="fas fa-laptop-code"></i></div>
           <div class="card-footer-custom">
@@ -177,6 +190,22 @@
   </section>
   <section class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="Contacto">Contacto</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="nombre_form">Nombre:</label>
+          <input class="form-control" id="nombre_form" type="text" name="" placeholder="Ingrese su nombre">
+          <label for="form_correo">Correo:</label>
+          <input class="form-control" id="form_correo" type="text" name="" placeholder="Ingrese su correo">
+          <label for="form_mensaje">Mensaje:</label>
+          <textarea class="form-control" id="form_mensaje" name="" placeholder="Ingrese algun mensaje" rows="3" cols="10"></textarea>
+        </div>
+        <div class="text-left">
+          <button class="btn btn-block btn-lg btn-color-custom"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center d-sm-none d-md-flex"><img class="img-fluid" src="img/contact.svg" alt="alt" loading="lazy"></div>
+    </div>
   </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
@@ -184,3 +213,4 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/configuraciontyped.js"></script>
+<script src="js/scripts.js"></script>

@@ -1,0 +1,44 @@
+.btn-color-custom {
+  color: #fff;
+  background-color: rgb(108, 99, 255);
+  border-color: rgba(107, 99, 255, 0.788);
+  transition: all 0.5s;
+}
+
+.btn-color-custom:hover {
+  color: #fff;
+  background-color: rgb(74, 69, 177);
+  border-color: rgba(68, 63, 175, 0.788);
+}
+
+.btn-color-custom:focus,
+.btn-color-custom.focus {
+  color: #fff;
+  background-color: rgb(65, 60, 158);
+  border-color: rgba(68, 63, 175, 0.788);
+  box-shadow: 0 0 0 0.2rem rgba(87, 82, 170, 0.692);
+}
+
+.btn-color-custom.disabled,
+.btn-color-custom:disabled {
+  color: #fff;
+  background-color: rgb(65, 60, 158);
+  border-color: rgba(68, 63, 175, 0.788);
+}
+
+.btn-color-custom:not(:disabled):not(.disabled):active,
+.btn-color-custom:not(:disabled):not(.disabled).active,
+.show > .btn-color-custom.dropdown-toggle {
+  color: #fff;
+  background-color: rgb(65, 60, 158);
+  border-color: rgba(68, 63, 175, 0.788);
+}
+
+.btn-color-custom:not(:disabled):not(.disabled):active:focus,
+.btn-color-custom:not(:disabled):not(.disabled).active:focus,
+.show > .btn-color-custom.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(107, 99, 255, 0.747);
+}
+.invertir {
+  transform: rotate(90deg);
+}

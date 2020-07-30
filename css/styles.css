@@ -5,10 +5,37 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
+textarea {
+  overflow: hidden;
+  resize: none;
+}
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
+}
+.f-18 {
+  font-size: 1.125rem !important;
+}
+.f-19 {
+  font-size: 1.2rem !important;
+}
+@media (max-width: 576px) {
+  .f-19 {
+    font-size: 1rem !important;
+  }
+}
+.f-20 {
+  font-size: 1.25rem !important;
+}
+.f-22 {
+  font-size: 1.375rem !important;
+}
+.nav-item {
+  transition: all 0.5s;
+}
+.nav-item:hover {
+  border-bottom: solid 1.5px rgb(108, 99, 255);
 }
 .portada {
   color: white;
@@ -38,14 +65,14 @@ a:active {
 .container-custom {
   width: 92%;
   margin: 1rem auto;
-  /* overflow: hidden; */
+  overflow: hidden; /* evita el scrool vertical */
 }
 .titulo_nombre {
   font-size: 2rem;
   font-weight: 700;
 }
 .titulo_carrera {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 .especialidades {
@@ -60,15 +87,10 @@ a:active {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.btn-color-custom {
-  background-color: rgb(108, 99, 255);
-  border-color: rgb(108, 99, 255);
-  transition: all ease 0.5s;
+.color-principal {
+  color: rgb(108, 99, 255);
 }
-.btn-color-custom:hover {
-  background-color: rgb(63, 58, 155);
-  border-color: rgb(63, 58, 155);
-}
+
 /* cards */
 .card-custom {
   padding: 1rem;
@@ -77,6 +99,10 @@ a:active {
   margin: 1rem 0;
   border-radius: 1rem;
   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.137);
+  transition: all 0.5s;
+}
+.card-custom:hover {
+  transform: scale(1.1);
 }
 
 .card-img {
@@ -86,11 +112,16 @@ a:active {
 }
 .card-font {
   width: 100%;
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+}
+@media (max-width: 768px) {
+  .card-font {
+    height: 150px;
+  }
 }
 .card-footer-custom {
   font-size: 1rem;
@@ -183,4 +214,9 @@ a:active {
 }
 .card-proyect-custom:hover .card-proyect-hover {
   transform: scale(1);
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
 }
