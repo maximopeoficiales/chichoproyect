@@ -39,11 +39,29 @@ a:active {
 .f-22 {
   font-size: 1.375rem !important;
 }
-.nav-item {
-  transition: all 0.5s;
+nav {
+  background-color: white !important;
+  -webkit-box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 14px -4px rgba(0, 0, 0, 0.15);
 }
-.nav-item:hover {
+@media (min-width: 758px) {
+  nav {
+    height: 60px;
+  }
+}
+.nav-item a.nav-link {
+  transition: ease 0.1s;
+}
+.nav-item:hover a.nav-link {
+  color: black;
+  font-weight: bold;
   border-bottom: solid 1.5px rgb(108, 99, 255);
+}
+@media (max-width: 768px) {
+  .nav-item {
+    text-align: center !important;
+  }
 }
 .portada {
   color: white;
@@ -75,6 +93,16 @@ a:active {
   margin: 1rem auto;
   overflow: hidden; /* evita el scrool vertical */
 }
+.img-avatar {
+  width: 15rem;
+  height: 15rem;
+}
+@media (max-width: 768px) {
+  .img-avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+}
 .titulo_nombre {
   font-size: 2rem;
   font-weight: 700;
@@ -87,6 +115,18 @@ a:active {
   font-size: 1rem;
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  .titulo_nombre {
+    font-size: 1.5rem;
+  }
+  .titulo_carrera {
+    font-size: 1.5rem;
+  }
+  .especialidades {
+    font-size: 0.8rem;
+  }
+}
+
 .subtitulo {
   font-size: 2.5rem;
   font-weight: 900;
@@ -96,7 +136,7 @@ a:active {
   font-weight: 700;
 }
 .color-principal {
-  color: rgb(108, 99, 255);
+  color: rgb(108, 99, 255) !important;
 }
 
 /* cards */
@@ -112,7 +152,12 @@ a:active {
 .card-custom:hover {
   transform: scale(1.1);
 }
-
+@media (max-width: 768px) {
+  .card-custom {
+    margin: 1rem auto;
+    width: 90%;
+  }
+}
 .card-img {
   width: 100%;
   height: 300px;
@@ -227,4 +272,20 @@ a:active {
   body {
     font-size: 13px;
   }
+}
+/* footer */
+.footer-social a i {
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: ease 0.3s;
+}
+.footer-social a:hover i {
+  color: rgb(108, 99, 255);
+}
+.footer-bottom p:nth-child(1) {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.footer-bottom p:nth-child(2) a {
+  font-size: 0.9rem;
 }

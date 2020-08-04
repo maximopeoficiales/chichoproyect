@@ -13,22 +13,24 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="img/gato.ico" width="30" height="30" alt="" loading="lazy"> ChichoProyects</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top"><a class="navbar-brand" href="#"><img class="d-inline-block align-top" src="img/gato.ico" width="30" height="30" alt="" loading="lazy"> ChichoProyects</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler-icon"></div>
+      </button>
       <div class="collapse navbar-collapse float-right" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="#SobreMi">Sobre Mí <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item active"><a class="nav-link" href="#SobreMi">Sobre Mí </a></li>
           <li class="nav-item"><a class="nav-link" href="#Proyectos">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
         </ul>
       </div>
-    </nav><br><br>
-    <div class="portada p-4-custom">
+    </nav>
+    <div class="portada p-4-custom d-flex flex-column justify-content-center align-items-center">
       <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <div class="rounded-circle my-4"><img src="img/logo.png" alt="alt"></div>
-          <h1 class="titulo_nombre my-4 h2">Maximo Junior Apaza Chirhuana</h1>
+          <div class="rounded-circle my-4"><img class="img-fluid rounded-circle img-avatar" src="https://avatars1.githubusercontent.com/u/53198604?s=460&amp;u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&amp;v=4" alt="alt"></div>
+          <h1 class="titulo_nombre my-2 h2">Maximo Junior Apaza Chirhuana</h1>
           <h3 class="titulo_carrera my-2"><span class="typed"></span></h3>
           <h4 class="especialidades my-2 f-20">Laravel | Node JS</h4>
           <h4 class="especialidades my-2 f-20">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
@@ -60,7 +62,7 @@
         <p>Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.</p>
       </div>
       <div class="col-md-6 p-3 d-flex flex-column justify-content-center f-19">
-        <p><i class="fas fa-user-tie color-principal"></i> <b>Edad Actual :</b>  <span id="edad">28</span></p>
+        <p><i class="fas fa-user-tie color-principal"></i> <b>Edad Actual :</b>  <span id="edad"></span></p>
         <p><i class="fas fa-map-marked-alt color-principal"></i> <b>Ubicación :</b> Lima, Perú</p>
         <p><i class="fas fa-laptop-code color-principal"></i> <b>Stack :</b> Node JS,React Js,Mysql</p>
         <p><i class="fas fa-grin-hearts color-principal"></i> <b>Intereses :</b> Desarrollo Web,Musica Rock,Videojuegos</p>
@@ -86,7 +88,7 @@
           </div>
         </p>
       </div>
-      <div class="col-md-6 p-3 text-justify d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/lenguajes2.svg" alt="alt"></div>
+      <div class="col-md-6 p-3 text-justify d-flex flex-column justify-content-center align-items-center"><img class="img-fluid" src="img/habilidades.svg" alt="alt"></div>
     </div>
     <hr>
   </main>
@@ -194,11 +196,11 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="nombre_form">Nombre:</label>
-          <input class="form-control" id="nombre_form" type="text" name="" placeholder="Ingrese su nombre">
+          <input class="form-control mb-1" id="nombre_form" type="text" name="" placeholder="Ingrese su nombre">
           <label for="form_correo">Correo:</label>
-          <input class="form-control" id="form_correo" type="text" name="" placeholder="Ingrese su correo">
+          <input class="form-control mb-1" id="form_correo" type="text" name="" placeholder="Ingrese su correo">
           <label for="form_mensaje">Mensaje:</label>
-          <textarea class="form-control" id="form_mensaje" name="" placeholder="Ingrese algun mensaje" rows="3" cols="10"></textarea>
+          <textarea class="form-control mb-1" id="form_mensaje" name="" placeholder="Ingrese algun mensaje" rows="3" cols="10"></textarea>
         </div>
         <div class="text-left">
           <button class="btn btn-block btn-lg btn-color-custom"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
@@ -207,6 +209,20 @@
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center d-sm-none d-md-flex"><img class="img-fluid" src="img/contact.svg" alt="alt" loading="lazy"></div>
     </div>
   </section>
+  <hr>
+  <footer class="container my-4">
+    <div class="row flex-column justify-content-center align-items-center text-center"><img class="my-4 img-fluid" src="img/gato_buscar.png" alt="gato_buscar" width="100px" height="100%" loading="lazy">
+      <h5 class="font-weight-bold">SIGUEME EN</h5>
+      <div class="footer-social d-flex justify-content-center my-3"><a class="mx-4 text-secondary"><i class="fa fa-github"></i></a><a class="mx-4 text-secondary"><i class="fa fa-facebook"></i></a><a class="mx-4 text-secondary"><i class="fa fa-instagram"></i></a></div>
+      <div class="footer-bottom">
+        <p class="font-weight-light"><b>Copyright &copy; <span id="ano"></span> </b> | Todos los derechos reservados </p>
+        <p class="font-weight-light"><a class="color-principal" href="#">+(51) 928644700 |</a>
+          <a class="color-principal" href="#">maximopeoficiales@gmail.com</a>
+        </p>
+        <p class="font-weight-light text-secondary"><small>Diseñado por <b>maximopeoficiales</b></small></p>
+      </div>
+    </div>
+  </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -13,32 +13,29 @@ head
      title ChichoProyects &#x1F639;
 body
      header
-          nav.navbar.navbar-expand-md.navbar-light.bg-light.fixed-top
+          nav.navbar.navbar-expand-md.navbar-light.fixed-top
                a.navbar-brand(href='#')
                     img.d-inline-block.align-top(src='img/gato.ico' width='30' height='30' alt='' loading='lazy')
                     |  ChichoProyects
                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-                    span.navbar-toggler-icon
+                    .navbar-toggler-icon
                #navbarNav.collapse.navbar-collapse.float-right
                     ul.navbar-nav.ml-auto
                          li.nav-item.active
-                              a.nav-link(href='#SobreMi')
-                                   | Sobre Mí 
-                                   span.sr-only (current)
+                              a.nav-link(href='#SobreMi') Sobre Mí 
                          li.nav-item
                               a.nav-link(href='#Proyectos') Proyectos
                          li.nav-item
                               a.nav-link(href='#Servicios') Servicios
                          li.nav-item
                               a.nav-link(href='#Contacto') Contacto
-          br
-          br
-          .portada.p-4-custom
+
+          .portada.p-4-custom.d-flex.flex-column.justify-content-center.align-items-center
                .container
                     .d-flex.flex-column.justify-content-center.align-items-center
                          div.rounded-circle.my-4
-                              img(src="img/logo.png" alt="alt" class=(""))
-                         h1.titulo_nombre.my-4.h2 Maximo Junior Apaza Chirhuana
+                              img(src="https://avatars1.githubusercontent.com/u/53198604?s=460&u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&v=4" alt="alt" class=("img-fluid rounded-circle img-avatar"))
+                         h1.titulo_nombre.my-2.h2 Maximo Junior Apaza Chirhuana
                          h3.titulo_carrera.my-2
                               span.typed
                          h4.especialidades.my-2.f-20 Laravel | Node JS
@@ -73,7 +70,7 @@ body
                     p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
 
                .col-md-6.p-3.d-flex.flex-column.justify-content-center.f-19
-                    p #[i.fas.fa-user-tie.color-principal] #[b Edad Actual :]  #[span(id="edad") 28]
+                    p #[i.fas.fa-user-tie.color-principal] #[b Edad Actual :]  #[span(id="edad") ]
                     p #[i.fas.fa-map-marked-alt.color-principal] #[b Ubicación :] Lima, Perú
                     p #[i.fas.fa-laptop-code.color-principal] #[b Stack :] Node JS,React Js,Mysql
                     p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Musica Rock,Videojuegos
@@ -93,7 +90,7 @@ body
                          .progress
                               .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
                .col-md-6.p-3.text-justify.d-flex.flex-column.justify-content-center.align-items-center
-                    img.img-fluid(src="img/lenguajes2.svg" alt="alt")
+                    img.img-fluid(src="img/habilidades.svg" alt="alt")
 
           hr          
      section.container-custom.my-4
@@ -180,15 +177,33 @@ body
                .col-md-6
                     .form-group
                          label(for='nombre_form') Nombre:
-                         input#nombre_form.form-control(type='text' name='' placeholder='Ingrese su nombre')
+                         input#nombre_form.form-control.mb-1(type='text' name='' placeholder='Ingrese su nombre')
                          label(for='form_correo') Correo:
-                         input#form_correo.form-control(type='text' name='' placeholder='Ingrese su correo')
+                         input#form_correo.form-control.mb-1(type='text' name='' placeholder='Ingrese su correo')
                          label(for='form_mensaje') Mensaje:
-                         textarea#form_mensaje.form-control(name='' placeholder='Ingrese algun mensaje' rows="3" cols="10")
+                         textarea#form_mensaje.form-control.mb-1(name='' placeholder='Ingrese algun mensaje' rows="3" cols="10")
                     .text-left
                          button.btn.btn-block.btn-lg.btn-color-custom <i class="fas fa-paper-plane"></i> Enviar Mensaje
                .col-md-6.d-flex.flex-column.justify-content-center.align-items-center.d-sm-none.d-md-flex
                     img.img-fluid(src="img/contact.svg" alt="alt" loading="lazy")
+     hr
+     footer.container.my-4
+          .row.flex-column.justify-content-center.align-items-center.text-center
+               img.my-4(src="img/gato_buscar.png" alt="gato_buscar" class=("img-fluid") width="100px" height="100%" loading="lazy")
+               h5.font-weight-bold SIGUEME EN
+               .footer-social.d-flex.justify-content-center.my-3
+                    a.mx-4.text-secondary #[i.fa.fa-github]
+                    a.mx-4.text-secondary #[i.fa.fa-facebook]
+                    a.mx-4.text-secondary #[i.fa.fa-instagram]
+               .footer-bottom
+                    p.font-weight-light #[b Copyright &copy; #[span(id="ano")] ] | Todos los derechos reservados 
+                    p.font-weight-light
+                         | #[a.color-principal(href="#") +(51) 928644700 |]
+                         | #[a.color-principal(href="#") maximopeoficiales@gmail.com]
+                    p.font-weight-light.text-secondary
+                         | #[small Diseñado por #[b maximopeoficiales]]
+
+
 
 script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
 script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
