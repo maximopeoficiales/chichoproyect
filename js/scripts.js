@@ -22,7 +22,7 @@ sr.reveal("#breve_descripcion", {
 });
 sr.reveal("#mis_habilidades", {
   duration: 1000,
-  origin: "right",
+  origin: "left",
   distance: "100px" /* distancia desde arriba en este caso */,
 });
 
