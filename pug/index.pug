@@ -22,6 +22,8 @@ body
                #navbarNav.collapse.navbar-collapse.float-right
                     ul.navbar-nav.ml-auto
                          li.nav-item.active
+                              a.nav-link(href='#Inicio') Inicio 
+                         li.nav-item
                               a.nav-link(href='#SobreMi') Sobre Mí 
                          li.nav-item
                               a.nav-link(href='#Proyectos') Proyectos
@@ -30,9 +32,9 @@ body
                          li.nav-item
                               a.nav-link(href='#Contacto') Contacto
 
-          .portada.p-4.d-flex.flex-column.justify-content-center.align-items-center
+          .portada.p-4.d-flex.flex-column.justify-content-center.align-items-center(id="Inicio")
                .container
-                    .d-flex.flex-column.justify-content-center.align-items-center
+                    .d-flex.flex-column.justify-content-center.align-items-center(id="datos_principales")
                          div.rounded-circle.my-4
                               img(src="https://avatars1.githubusercontent.com/u/53198604?s=460&u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&v=4" alt="alt" class=("img-fluid rounded-circle img-avatar"))
                          h1.titulo_nombre.my-2.h2 Maximo Junior Apaza Chirhuana
@@ -46,7 +48,7 @@ body
           
      main.container.my-4
           h2.text-center.my-4.subtitulo(id="SobreMi") Sobre Mí
-          .row
+          .row(id="algunas_palabras")
                .col-md-6.p-3.d-flex.flex-column.justify-content-center.align-items-center
                     img.img-fluid(src="img/sobremi.svg" alt="alt" loading="lazy")
                .col-md-6.p-3.text-justify
@@ -60,7 +62,7 @@ body
                          button.btn.btn-lg.btn-color-custom 
                               |<i class="far fa-file-alt"></i> Descargar CV
 
-          .row
+          .row(id="breve_descripcion")
                .col-md-6.p-3
                     h4.subtitulo-h4.my-2.text-left Una breve descripcion...
                     p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
@@ -76,7 +78,7 @@ body
                     p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Videojuegos
 
           h2.text-center.my-4.subtitulo  Mis Habilidades
-          .row
+          .row(id="mis_habilidades")
                .col-md-6.p-3
                     h4.subtitulo-h4.my-4 En lo mejor que me desempeño...
                     p Javascript
@@ -171,7 +173,7 @@ body
                               .card-description     
                                    p Optimizacion y Soluciones de Codigo
           
-     section.container.my-4
+     section.container.my-4(id="contacto_m")
           h2.text-center.my-4.subtitulo(id="Contacto") Contacto
           .row
                .col-md-6
@@ -204,6 +206,7 @@ body
 
 
 script(src='js/typed.js')
+script(src='js/scrollreveal.min.js')
 script(src='js/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
 script(src='js/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
 script(src='js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
