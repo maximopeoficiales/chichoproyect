@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -14,17 +15,11 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-.p-4-custom {
-  padding: 1.25rem !important;
+
+.f-14 {
+  font-size: 0.875rem !important;
 }
-@media (max-width: 576px) {
-  .p-4-custom {
-    padding: 0 !important;
-  }
-}
-.f-18 {
-  font-size: 1.125rem !important;
-}
+
 .f-19 {
   font-size: 1.2rem !important;
 }
@@ -32,12 +27,6 @@ a:active {
   .f-19 {
     font-size: 1rem !important;
   }
-}
-.f-20 {
-  font-size: 1.25rem !important;
-}
-.f-22 {
-  font-size: 1.375rem !important;
 }
 nav {
   background-color: white !important;
@@ -66,7 +55,6 @@ nav {
 .portada {
   color: white;
   text-align: center;
-
   width: 100%;
   height: 100vh;
   /* fallback for old browsers */
@@ -112,16 +100,15 @@ nav {
   font-weight: 500;
 }
 .especialidades {
-  font-size: 1rem;
+  font-size: 1.25rem !important;
   font-weight: 300;
 }
 @media (max-width: 768px) {
-  .titulo_nombre {
-    font-size: 1.5rem;
-  }
+  .titulo_nombre,
   .titulo_carrera {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
+
   .especialidades {
     font-size: 0.8rem;
   }
@@ -158,14 +145,9 @@ nav {
     width: 90%;
   }
 }
-.card-img {
-  width: 100%;
-  height: 300px;
-  border-radius: 0.5rem;
-}
 .card-font {
   width: 100%;
-  height: 250px;
+  height: 15.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +155,7 @@ nav {
 }
 @media (max-width: 768px) {
   .card-font {
-    height: 150px;
+    height: 9.375rem;
   }
 }
 .card-footer-custom {
@@ -193,10 +175,10 @@ nav {
 }
 
 /* cards proyect */
-.efecto-proyect {
+.card-proyect {
   transition: all 0.5s;
 }
-.card-proyect-custom {
+.card-proyect-content {
   margin: 2rem 1rem;
   background-color: #fff;
   border-radius: 1rem;
@@ -205,7 +187,7 @@ nav {
   cursor: pointer;
 }
 
-.card-proyect-custom img {
+.card-proyect-content img {
   width: 100%;
   height: 100%;
   border-radius: 1em;
@@ -236,8 +218,8 @@ nav {
 
 .card-circle-span {
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-color: rgba(42, 35, 136, 0.562);
   display: flex;
   /* centra perfectamento dentro del contenedor */
@@ -254,7 +236,15 @@ nav {
   color: white;
   font-size: 2rem;
 }
-
+@media (max-width: 576px) {
+  .card-circle-span {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .card-circle-span i {
+    font-size: 1.8rem;
+  }
+}
 .card-proyect-name h4 {
   text-align: center;
   margin: 1rem auto;
@@ -262,16 +252,11 @@ nav {
   font-size: 1.5rem;
 }
 
-.efecto-proyect:hover {
+.card-proyect:hover {
   transform: scale(1.1);
 }
-.card-proyect-custom:hover .card-proyect-hover {
+.card-proyect-content:hover .card-proyect-hover {
   transform: scale(1);
-}
-@media (max-width: 576px) {
-  body {
-    font-size: 13px;
-  }
 }
 /* footer */
 .footer-social a i {
@@ -288,4 +273,12 @@ nav {
 }
 .footer-bottom p:nth-child(2) a {
   font-size: 0.9rem;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
 }

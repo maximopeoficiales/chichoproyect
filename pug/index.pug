@@ -7,7 +7,7 @@ head
      // Bootstrap CSS
      link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
      script(src='https://kit.fontawesome.com/b5b7f00aae.js' crossorigin='anonymous')     
-     link(rel='stylesheet' href='css/spinner.css' crossorigin='anonymous')
+     link(rel='stylesheet' href='css/bootstrap_custom.css' crossorigin='anonymous')
      link(rel='stylesheet' href='css/styles.css' crossorigin='anonymous')
 
      title ChichoProyects &#x1F639;
@@ -30,7 +30,7 @@ body
                          li.nav-item
                               a.nav-link(href='#Contacto') Contacto
 
-          .portada.p-4-custom.d-flex.flex-column.justify-content-center.align-items-center
+          .portada.p-4.d-flex.flex-column.justify-content-center.align-items-center
                .container
                     .d-flex.flex-column.justify-content-center.align-items-center
                          div.rounded-circle.my-4
@@ -38,12 +38,12 @@ body
                          h1.titulo_nombre.my-2.h2 Maximo Junior Apaza Chirhuana
                          h3.titulo_carrera.my-2
                               span.typed
-                         h4.especialidades.my-2.f-20 Laravel | Node JS
-                         h4.especialidades.my-2.f-20 React-JS | Boostrap | MySql | MongoDB | Git
+                         h4.especialidades.my-2 Laravel | Node JS
+                         h4.especialidades.my-2 React-JS | Boostrap | MySql | MongoDB | Git
                          br
-                         button.btn.btn-lg.btn-color-custom.f-20 Contactame
+                         button.especialidades.btn.btn-lg.btn-color-custom Contactame
 
-
+          
      main.container.my-4
           h2.text-center.my-4.subtitulo(id="SobreMi") Sobre Mí
           .row
@@ -73,7 +73,7 @@ body
                     p #[i.fas.fa-user-tie.color-principal] #[b Edad Actual :]  #[span(id="edad") ]
                     p #[i.fas.fa-map-marked-alt.color-principal] #[b Ubicación :] Lima, Perú
                     p #[i.fas.fa-laptop-code.color-principal] #[b Stack :] Node JS,React Js,Mysql
-                    p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Musica Rock,Videojuegos
+                    p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Videojuegos
 
           h2.text-center.my-4.subtitulo  Mis Habilidades
           .row
@@ -97,8 +97,8 @@ body
           h2.text-center.my-4.subtitulo(id="Proyectos")  Proyectos Destacados
           .row
                .col-md-6.col-lg-6
-                    .efecto-proyect
-                         .card-proyect-custom  
+                    .card-proyect
+                         .card-proyect-content  
                               img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
                               .card-proyect-hover
                                    a.card-circle-span(href="#")
@@ -106,8 +106,8 @@ body
                          .card-proyect-name.text-center
                               h4 Tiendas Virtuales
                .col-md-6.col-lg-6
-                    .efecto-proyect
-                         .card-proyect-custom  
+                    .card-proyect
+                         .card-proyect-content  
                               img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
                               .card-proyect-hover
                                    a.card-circle-span(href="#")
@@ -115,8 +115,8 @@ body
                          .card-proyect-name.text-center
                               h4 App de Encuestas
                .col-md-6.col-lg-6
-                    .efecto-proyect
-                         .card-proyect-custom  
+                    .card-proyect
+                         .card-proyect-content  
                               img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
                               .card-proyect-hover
                                    a.card-circle-span(href="#")
@@ -125,8 +125,8 @@ body
                               h4 Modulos para Wari HC
 
                .col-md-6.col-lg-6
-                    .efecto-proyect
-                         .card-proyect-custom  
+                    .card-proyect
+                         .card-proyect-content  
                               img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
                               .card-proyect-hover
                                    a.card-circle-span(href="#")
@@ -139,7 +139,7 @@ body
                .col-lg-6
                     button.btn.btn-lg.btn-block.btn-color-custom Ver Todos los Proyectos
                .col-lg-3   
-          hr.container
+          
      section.container.my-4
           h2.text-center.my-4.subtitulo(id="Servicios") Mis Servicios   
           .row    
@@ -170,7 +170,7 @@ body
                                    h4 Soporte de Proyectos
                               .card-description     
                                    p Optimizacion y Soluciones de Codigo
-          hr
+          
      section.container.my-4
           h2.text-center.my-4.subtitulo(id="Contacto") Contacto
           .row
@@ -186,7 +186,7 @@ body
                          button.btn.btn-block.btn-lg.btn-color-custom <i class="fas fa-paper-plane"></i> Enviar Mensaje
                .col-md-6.d-flex.flex-column.justify-content-center.align-items-center.d-sm-none.d-md-flex
                     img.img-fluid(src="img/contact.svg" alt="alt" loading="lazy")
-     hr
+     
      footer.container.my-4
           .row.flex-column.justify-content-center.align-items-center.text-center
                img.my-4(src="img/gato_buscar.png" alt="gato_buscar" class=("img-fluid") width="100px" height="100%" loading="lazy")
@@ -196,11 +196,9 @@ body
                     a.mx-4.text-secondary #[i.fa.fa-facebook]
                     a.mx-4.text-secondary #[i.fa.fa-instagram]
                .footer-bottom
-                    p.font-weight-light #[b Copyright &copy; #[span(id="ano")] ] | Todos los derechos reservados 
-                    p.font-weight-light
-                         | #[a.color-principal(href="#") +(51) 928644700 |]
-                         | #[a.color-principal(href="#") maximopeoficiales@gmail.com]
-                    p.font-weight-light.text-secondary
+                    p.font-weight-light #[b Copyright &copy; #[span(id="ano")] ] 
+                    p.font-weight-light.mb-0 Todos los derechos reservados 
+                    p.font-weight-light.text-secondary.f-14
                          | #[small Diseñado por #[b maximopeoficiales]]
 
 

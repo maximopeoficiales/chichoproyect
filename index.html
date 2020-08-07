@@ -7,7 +7,7 @@
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/b5b7f00aae.js" crossorigin="anonymous">    </script>
-  <link rel="stylesheet" href="css/spinner.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap_custom.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" crossorigin="anonymous">
   <title>ChichoProyects &#x1F639;</title>
 </head>
@@ -26,15 +26,15 @@
         </ul>
       </div>
     </nav>
-    <div class="portada p-4-custom d-flex flex-column justify-content-center align-items-center">
+    <div class="portada p-4 d-flex flex-column justify-content-center align-items-center">
       <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <div class="rounded-circle my-4"><img class="img-fluid rounded-circle img-avatar" src="https://avatars1.githubusercontent.com/u/53198604?s=460&amp;u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&amp;v=4" alt="alt"></div>
           <h1 class="titulo_nombre my-2 h2">Maximo Junior Apaza Chirhuana</h1>
           <h3 class="titulo_carrera my-2"><span class="typed"></span></h3>
-          <h4 class="especialidades my-2 f-20">Laravel | Node JS</h4>
-          <h4 class="especialidades my-2 f-20">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
-          <button class="btn btn-lg btn-color-custom f-20">Contactame</button>
+          <h4 class="especialidades my-2">Laravel | Node JS</h4>
+          <h4 class="especialidades my-2">React-JS | Boostrap | MySql | MongoDB | Git</h4><br>
+          <button class="especialidades btn btn-lg btn-color-custom">Contactame</button>
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@
         <p><i class="fas fa-user-tie color-principal"></i> <b>Edad Actual :</b>  <span id="edad"></span></p>
         <p><i class="fas fa-map-marked-alt color-principal"></i> <b>Ubicación :</b> Lima, Perú</p>
         <p><i class="fas fa-laptop-code color-principal"></i> <b>Stack :</b> Node JS,React Js,Mysql</p>
-        <p><i class="fas fa-grin-hearts color-principal"></i> <b>Intereses :</b> Desarrollo Web,Musica Rock,Videojuegos</p>
+        <p><i class="fas fa-grin-hearts color-principal"></i> <b>Intereses :</b> Desarrollo Web,Videojuegos</p>
       </div>
     </div>
     <h2 class="text-center my-4 subtitulo"> Mis Habilidades</h2>
@@ -96,8 +96,8 @@
     <h2 class="text-center my-4 subtitulo" id="Proyectos"> Proyectos Destacados</h2>
     <div class="row">
       <div class="col-md-6 col-lg-6">
-        <div class="efecto-proyect">
-          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+        <div class="card-proyect">
+          <div class="card-proyect-content"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
             <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
           </div>
           <div class="card-proyect-name text-center">
@@ -106,8 +106,8 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-6">
-        <div class="efecto-proyect">
-          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+        <div class="card-proyect">
+          <div class="card-proyect-content"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
             <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
           </div>
           <div class="card-proyect-name text-center">
@@ -116,8 +116,8 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-6">
-        <div class="efecto-proyect">
-          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+        <div class="card-proyect">
+          <div class="card-proyect-content"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
             <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
           </div>
           <div class="card-proyect-name text-center">
@@ -126,8 +126,8 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-6">
-        <div class="efecto-proyect">
-          <div class="card-proyect-custom"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
+        <div class="card-proyect">
+          <div class="card-proyect-content"> <img class="img-fluid" src="img/proyect2.svg" alt="alt" loading="lazy">
             <div class="card-proyect-hover"><a class="card-circle-span" href="#"><i class="fas fa-link"></i></a></div>
           </div>
           <div class="card-proyect-name text-center">
@@ -143,7 +143,6 @@
       </div>
       <div class="col-lg-3">  </div>
     </div>
-    <hr class="container">
   </section>
   <section class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="Servicios">Mis Servicios   </h2>
@@ -188,7 +187,6 @@
         </div>
       </div>
     </div>
-    <hr>
   </section>
   <section class="container my-4">
     <h2 class="text-center my-4 subtitulo" id="Contacto">Contacto</h2>
@@ -209,17 +207,14 @@
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center d-sm-none d-md-flex"><img class="img-fluid" src="img/contact.svg" alt="alt" loading="lazy"></div>
     </div>
   </section>
-  <hr>
   <footer class="container my-4">
     <div class="row flex-column justify-content-center align-items-center text-center"><img class="my-4 img-fluid" src="img/gato_buscar.png" alt="gato_buscar" width="100px" height="100%" loading="lazy">
       <h5 class="font-weight-bold">SIGUEME EN</h5>
       <div class="footer-social d-flex justify-content-center my-3"><a class="mx-4 text-secondary"><i class="fa fa-github"></i></a><a class="mx-4 text-secondary"><i class="fa fa-facebook"></i></a><a class="mx-4 text-secondary"><i class="fa fa-instagram"></i></a></div>
       <div class="footer-bottom">
-        <p class="font-weight-light"><b>Copyright &copy; <span id="ano"></span> </b> | Todos los derechos reservados </p>
-        <p class="font-weight-light"><a class="color-principal" href="#">+(51) 928644700 |</a>
-          <a class="color-principal" href="#">maximopeoficiales@gmail.com</a>
-        </p>
-        <p class="font-weight-light text-secondary"><small>Diseñado por <b>maximopeoficiales</b></small></p>
+        <p class="font-weight-light"><b>Copyright &copy; <span id="ano"></span> </b> </p>
+        <p class="font-weight-light mb-0">Todos los derechos reservados </p>
+        <p class="font-weight-light text-secondary f-14"><small>Diseñado por <b>maximopeoficiales</b></small></p>
       </div>
     </div>
   </footer>
