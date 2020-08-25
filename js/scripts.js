@@ -26,18 +26,6 @@ sr.reveal("#mis_habilidades", {
   distance: "100px" /* distancia desde arriba en este caso */,
 });
 
-sr.reveal(".card-proyect", {
-  duration: 1000,
-  origin: "left",
-  distance: "100px" /* distancia desde arriba en este caso */,
-});
-
-sr.reveal(".card-custom", {
-  duration: 1000,
-  origin: "left",
-  distance: "100px" /* distancia desde arriba en este caso */,
-});
-
 sr.reveal(".contacto_m", {
   duration: 1000,
   origin: "left",

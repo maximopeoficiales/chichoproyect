@@ -1,8 +1,15 @@
-doctype html
-head
-     // Required meta tags
-     meta(charset='utf-8')
-     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+html(prefix="og: https://ogp.me/ns#")
+     doctype html
+     head
+          // Required meta tags
+          meta(charset='utf-8')
+          meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+          meta(property='og:title' content='Mi Portafolio')
+          meta(property='og:type' content='blog')
+          meta(property='og:url' content='https://maximopeoficiales.github.io/chichoproyect/')
+          meta(property='og:image' content='https://avatars1.githubusercontent.com/u/53198604?s=460&u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&v=4')
+          meta(property='og:description' content='Portafolio Web con proyectos reales con mis skills mas resaltantes ')
+
      link(rel='shortcut icon' href='img/gato.ico' type='image/x-icon')
      // Bootstrap CSS
      link(rel='stylesheet' href='css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
@@ -11,204 +18,204 @@ head
      link(rel='stylesheet' href='css/styles.css' crossorigin='anonymous')
 
      title ChichoProyects &#x1F639;
-body
-     header
-          nav.navbar.navbar-expand-md.navbar-light.fixed-top
-               a.navbar-brand(href='#')
-                    img.d-inline-block.align-top(src='img/gato.ico' width='30' height='30' alt='' loading='lazy')
-                    |  ChichoProyects
-               button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-                    .navbar-toggler-icon
-               #navbarNav.collapse.navbar-collapse.float-right
-                    ul.navbar-nav.ml-auto
-                         li.nav-item.active
-                              a.nav-link(href='#Inicio') Inicio 
-                         li.nav-item
-                              a.nav-link(href='#SobreMi') Sobre Mí 
-                         li.nav-item
-                              a.nav-link(href='#Proyectos') Proyectos
-                         li.nav-item
-                              a.nav-link(href='#Servicios') Servicios
-                         li.nav-item
-                              a.nav-link(href='#Contacto') Contacto
+     body
+          header
+               nav.navbar.navbar-expand-md.navbar-light.fixed-top
+                    a.navbar-brand(href='#')
+                         img.d-inline-block.align-top(src='img/gato.ico' width='30' height='30' alt='' loading='lazy')
+                         |  ChichoProyects
+                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                         .navbar-toggler-icon
+                    #navbarNav.collapse.navbar-collapse.float-right
+                         ul.navbar-nav.ml-auto
+                              li.nav-item.active
+                                   a.nav-link(href='#Inicio') Inicio 
+                              li.nav-item
+                                   a.nav-link(href='#SobreMi') Sobre Mí 
+                              li.nav-item
+                                   a.nav-link(href='#Proyectos') Proyectos
+                              li.nav-item
+                                   a.nav-link(href='#Servicios') Servicios
+                              li.nav-item
+                                   a.nav-link(href='#Contacto') Contacto
 
-          .portada.p-4.d-flex.flex-column.justify-content-center.align-items-center(id="Inicio")
-               .container
-                    .d-flex.flex-column.justify-content-center.align-items-center(id="datos_principales")
-                         div.rounded-circle.my-4
-                              img(src="https://avatars1.githubusercontent.com/u/53198604?s=460&u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&v=4" alt="alt" class=("img-fluid rounded-circle img-avatar"))
-                         h1.titulo_nombre.my-2.h2 Maximo Junior Apaza Chirhuana
-                         h3.titulo_carrera.my-2
-                              span.typed
-                         h4.especialidades.my-2 Laravel | Node JS
-                         h4.especialidades.my-2 React-JS | Boostrap | MySql | MongoDB | Git
-                         br
-                         button.especialidades.btn.btn-lg.btn-color-custom Contactame
-
-          
-     main.container.my-4
-          h2.text-center.my-4.subtitulo(id="SobreMi") Sobre Mí
-          .row(id="algunas_palabras")
-               .col-md-6.p-3.d-flex.flex-column.justify-content-center.align-items-center
-                    img.img-fluid(src="img/sobremi.svg" alt="alt" loading="lazy")
-               .col-md-6.p-3.text-justify
-                    h4.subtitulo-h4.my-2 Algunas Palabras...
-                    p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
-
-                    p Soy desarrollador web, me fascina la programacion y la informatica #[b desde los 16 años.] Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
-
-                    p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
-                    .text-center                        
-                         button.btn.btn-lg.btn-color-custom 
-                              |<i class="far fa-file-alt"></i> Descargar CV
-
-          .row(id="breve_descripcion")
-               .col-md-6.p-3
-                    h4.subtitulo-h4.my-2.text-left Una breve descripcion...
-                    p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
-
-                    p Soy desarrollador web, me fascina la programacion y la informatica #[b desde los 16 años.] Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
-
-                    p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
-
-               .col-md-6.p-3.d-flex.flex-column.justify-content-center.f-19
-                    p #[i.fas.fa-user-tie.color-principal] #[b Edad Actual :]  #[span(id="edad") ]
-                    p #[i.fas.fa-map-marked-alt.color-principal] #[b Ubicación :] Lima, Perú
-                    p #[i.fas.fa-laptop-code.color-principal] #[b Stack :] Node JS,React Js,Mysql
-                    p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Videojuegos
-
-          h2.text-center.my-4.subtitulo  Mis Habilidades
-          .row(id="mis_habilidades")
-               .col-md-6.p-3
-                    h4.subtitulo-h4.my-4 En lo mejor que me desempeño...
-                    p Javascript
-                         .progress
-                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
-                    p PHP
-                         .progress
-                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
-
-                    p SQL
-                         .progress
-                              .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
-               .col-md-6.p-3.text-justify.d-flex.flex-column.justify-content-center.align-items-center
-                    img.img-fluid(src="img/habilidades.svg" alt="alt")
-
-          hr          
-     section.container-custom.my-4
-          h2.text-center.my-4.subtitulo(id="Proyectos")  Proyectos Destacados
-          .row
-               .col-md-6.col-lg-6
-                    .card-proyect
-                         .card-proyect-content  
-                              img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
-                              .card-proyect-hover
-                                   a.card-circle-span(href="#")
-                                        <i class="fas fa-link"></i>
-                         .card-proyect-name.text-center
-                              h4 Tiendas Virtuales
-               .col-md-6.col-lg-6
-                    .card-proyect
-                         .card-proyect-content  
-                              img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
-                              .card-proyect-hover
-                                   a.card-circle-span(href="#")
-                                        <i class="fas fa-link"></i>
-                         .card-proyect-name.text-center
-                              h4 App de Encuestas
-               .col-md-6.col-lg-6
-                    .card-proyect
-                         .card-proyect-content  
-                              img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
-                              .card-proyect-hover
-                                   a.card-circle-span(href="#")
-                                        <i class="fas fa-link"></i>
-                         .card-proyect-name.text-center
-                              h4 Modulos para Wari HC
-
-               .col-md-6.col-lg-6
-                    .card-proyect
-                         .card-proyect-content  
-                              img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
-                              .card-proyect-hover
-                                   a.card-circle-span(href="#")
-                                        <i class="fas fa-link"></i>
-                         .card-proyect-name.text-center
-                              h4 Sistemas de Ventas Web
-
-          .row.my-4
-               .col-lg-3
-               .col-lg-6
-                    button.btn.btn-lg.btn-block.btn-color-custom Ver Todos los Proyectos
-               .col-lg-3   
-          
-     section.container.my-4
-          h2.text-center.my-4.subtitulo(id="Servicios") Mis Servicios   
-          .row    
-               .col-md-4.col-lg-4
-                    .card-custom
-                         .card-font
-                              <i class="fas fa-code"></i>
-                         .card-footer-custom
-                              .card-name
-                                   h4 Desarrollo Frontend
-                              .card-description     
-                                   p Impresionantes Paginas Responsivas
-               .col-md-4.col-lg-4
-                    .card-custom
-                         .card-font
-                              <i class="fas fa-server"></i>
-                         .card-footer-custom
-                              .card-name
-                                   h4 Desarrollo Backend
-                              .card-description     
-                                   p API REST con Node JS, Laravel
-               .col-md-4.col-lg-4
-                    .card-custom
-                         .card-font
-                              <i class="fas fa-laptop-code"></i>
-                         .card-footer-custom
-                              .card-name
-                                   h4 Soporte de Proyectos
-                              .card-description     
-                                   p Optimizacion y Soluciones de Codigo
-          
-     section.container.my-4(id="contacto_m")
-          h2.text-center.my-4.subtitulo(id="Contacto") Contacto
-          .row
-               .col-md-6
-                    .form-group
-                         label(for='nombre_form') Nombre:
-                         input#nombre_form.form-control.mb-1(type='text' name='' placeholder='Ingrese su nombre')
-                         label(for='form_correo') Correo:
-                         input#form_correo.form-control.mb-1(type='text' name='' placeholder='Ingrese su correo')
-                         label(for='form_mensaje') Mensaje:
-                         textarea#form_mensaje.form-control.mb-1(name='' placeholder='Ingrese algun mensaje' rows="3" cols="10")
-                    .text-left
-                         button.btn.btn-block.btn-lg.btn-color-custom <i class="fas fa-paper-plane"></i> Enviar Mensaje
-               .col-md-6.d-flex.flex-column.justify-content-center.align-items-center.d-sm-none.d-md-flex
-                    img.img-fluid(src="img/contact.svg" alt="alt" loading="lazy")
-     
-     footer.container.my-4
-          .row.flex-column.justify-content-center.align-items-center.text-center
-               img.my-4(src="img/gato_buscar.png" alt="gato_buscar" class=("img-fluid") width="100px" height="100%" loading="lazy")
-               h5.font-weight-bold SIGUEME EN
-               .footer-social.d-flex.justify-content-center.my-3
-                    a.mx-4.text-secondary #[i.fa.fa-github]
-                    a.mx-4.text-secondary #[i.fa.fa-facebook]
-                    a.mx-4.text-secondary #[i.fa.fa-instagram]
-               .footer-bottom
-                    p.font-weight-light #[b Copyright &copy; #[span(id="ano")] ] 
-                    p.font-weight-light.mb-0 Todos los derechos reservados 
-                    p.font-weight-light.text-secondary.f-14
-                         | #[small Diseñado por #[b maximopeoficiales]]
+               .portada.p-4.d-flex.flex-column.justify-content-center.align-items-center(id="Inicio")
+                    .container
+                         .d-flex.flex-column.justify-content-center.align-items-center(id="datos_principales")
+                              div.rounded-circle.my-4
+                                   img(src="https://avatars1.githubusercontent.com/u/53198604?s=460&u=4a7fa08dbbf4a06d086cfc635c6ab19520b6d8e6&v=4" alt="alt" class=("img-fluid rounded-circle img-avatar"))
+                              h1.titulo_nombre.my-2.h2 Maximo Junior Apaza Chirhuana
+                              h3.titulo_carrera.my-2
+                                   span.typed
+                              h4.especialidades.my-2 Laravel | Node JS
+                              h4.especialidades.my-2 React-JS | Boostrap | MySql | MongoDB | Git
+                              br
+                              button.especialidades.btn.btn-lg.btn-color-custom Contactame
 
 
+          main.container.my-4
+               h2.text-center.my-4.subtitulo(id="SobreMi") Sobre Mí
+               .row(id="algunas_palabras")
+                    .col-md-6.p-3.d-flex.flex-column.justify-content-center.align-items-center
+                         img.img-fluid(src="img/sobremi.svg" alt="alt" loading="lazy")
+                    .col-md-6.p-3.text-justify
+                         h4.subtitulo-h4.my-2 Algunas Palabras...
+                         p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
 
-script(src='js/typed.js')
-script(src='js/scrollreveal.min.js')
-script(src='js/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
-script(src='js/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
-script(src='js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
-script(src='js/configuraciontyped.js')
-script(src='js/scripts.js')
+                         p Soy desarrollador web, me fascina la programacion y la informatica #[b desde los 16 años.] Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
+
+                         p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
+                         .text-center                        
+                              button.btn.btn-lg.btn-color-custom 
+                                   |<i class="far fa-file-alt"></i> Descargar CV
+
+               .row(id="breve_descripcion")
+                    .col-md-6.p-3
+                         h4.subtitulo-h4.my-2.text-left Una breve descripcion...
+                         p Soy un joven #[b muy responsable], feliz e interesante de conocer. Mi mayor caracteristica es mi curiosidad por aprender cosas nuevas y eso me dado muchos beneficios.
+
+                         p Soy desarrollador web, me fascina la programacion y la informatica #[b desde los 16 años.] Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
+
+                         p Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.
+
+                    .col-md-6.p-3.d-flex.flex-column.justify-content-center.f-19
+                         p #[i.fas.fa-user-tie.color-principal] #[b Edad Actual :]  #[span(id="edad") ]
+                         p #[i.fas.fa-map-marked-alt.color-principal] #[b Ubicación :] Lima, Perú
+                         p #[i.fas.fa-laptop-code.color-principal] #[b Stack :] Node JS,React Js,Mysql
+                         p #[i.fas.fa-grin-hearts.color-principal] #[b Intereses :] Desarrollo Web,Videojuegos
+
+               h2.text-center.my-4.subtitulo  Mis Habilidades
+               .row(id="mis_habilidades")
+                    .col-md-6.p-3
+                         h4.subtitulo-h4.my-4 En lo mejor que me desempeño...
+                         p Javascript
+                              .progress
+                                   .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+                         p PHP
+                              .progress
+                                   .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+
+                         p SQL
+                              .progress
+                                   .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%') 90%
+                    .col-md-6.p-3.text-justify.d-flex.flex-column.justify-content-center.align-items-center
+                         img.img-fluid(src="img/habilidades.svg" alt="alt")
+
+               hr          
+          section.container-custom.my-4
+               h2.text-center.my-4.subtitulo(id="Proyectos")  Proyectos Destacados
+               .row
+                    .col-md-6.col-lg-6
+                         .card-proyect
+                              .card-proyect-content  
+                                   img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
+                                   .card-proyect-hover
+                                        a.card-circle-span(href="#")
+                                             <i class="fas fa-link"></i>
+                              .card-proyect-name.text-center
+                                   h4 Tiendas Virtuales
+                    .col-md-6.col-lg-6
+                         .card-proyect
+                              .card-proyect-content  
+                                   img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
+                                   .card-proyect-hover
+                                        a.card-circle-span(href="#")
+                                             <i class="fas fa-link"></i>
+                              .card-proyect-name.text-center
+                                   h4 App de Encuestas
+                    .col-md-6.col-lg-6
+                         .card-proyect
+                              .card-proyect-content  
+                                   img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
+                                   .card-proyect-hover
+                                        a.card-circle-span(href="#")
+                                             <i class="fas fa-link"></i>
+                              .card-proyect-name.text-center
+                                   h4 Modulos para Wari HC
+
+                    .col-md-6.col-lg-6
+                         .card-proyect
+                              .card-proyect-content  
+                                   img.img-fluid(src="img/proyect2.svg" alt="alt" loading="lazy")
+                                   .card-proyect-hover
+                                        a.card-circle-span(href="#")
+                                             <i class="fas fa-link"></i>
+                              .card-proyect-name.text-center
+                                   h4 Sistemas de Ventas Web
+
+               .row.my-4
+                    .col-lg-3
+                    .col-lg-6
+                         button.btn.btn-lg.btn-block.btn-color-custom Ver Todos los Proyectos
+                    .col-lg-3   
+
+          section.container.my-4
+               h2.text-center.my-4.subtitulo(id="Servicios") Mis Servicios   
+               .row    
+                    .col-md-4.col-lg-4
+                         .card-custom
+                              .card-font
+                                   <i class="fas fa-code"></i>
+                              .card-footer-custom
+                                   .card-name
+                                        h4 Desarrollo Frontend
+                                   .card-description     
+                                        p Impresionantes Paginas Responsivas
+                    .col-md-4.col-lg-4
+                         .card-custom
+                              .card-font
+                                   <i class="fas fa-server"></i>
+                              .card-footer-custom
+                                   .card-name
+                                        h4 Desarrollo Backend
+                                   .card-description     
+                                        p API REST con Node JS, Laravel
+                    .col-md-4.col-lg-4
+                         .card-custom
+                              .card-font
+                                   <i class="fas fa-laptop-code"></i>
+                              .card-footer-custom
+                                   .card-name
+                                        h4 Soporte de Proyectos
+                                   .card-description     
+                                        p Optimizacion y Soluciones de Codigo
+
+          section.container.my-4(id="contacto_m")
+               h2.text-center.my-4.subtitulo(id="Contacto") Contacto
+               .row
+                    .col-md-6
+                         .form-group
+                              label(for='nombre_form') Nombre:
+                              input#nombre_form.form-control.mb-1(type='text' name='' placeholder='Ingrese su nombre')
+                              label(for='form_correo') Correo:
+                              input#form_correo.form-control.mb-1(type='text' name='' placeholder='Ingrese su correo')
+                              label(for='form_mensaje') Mensaje:
+                              textarea#form_mensaje.form-control.mb-1(name='' placeholder='Ingrese algun mensaje' rows="3" cols="10")
+                         .text-left
+                              button.btn.btn-block.btn-lg.btn-color-custom <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    .col-md-6.d-flex.flex-column.justify-content-center.align-items-center.d-sm-none.d-md-flex
+                         img.img-fluid(src="img/contact.svg" alt="alt" loading="lazy")
+
+          footer.container.my-4
+               .row.flex-column.justify-content-center.align-items-center.text-center
+                    img.my-4(src="img/gato_buscar.png" alt="gato_buscar" class=("img-fluid") width="100px" height="100%" loading="lazy")
+                    h5.font-weight-bold SIGUEME EN
+                    .footer-social.d-flex.justify-content-center.my-3
+                         a.mx-4.text-secondary #[i.fa.fa-github]
+                         a.mx-4.text-secondary #[i.fa.fa-facebook]
+                         a.mx-4.text-secondary #[i.fa.fa-instagram]
+                    .footer-bottom
+                         p.font-weight-light #[b Copyright &copy; #[span(id="ano")] ] 
+                         p.font-weight-light.mb-0 Todos los derechos reservados 
+                         p.font-weight-light.text-secondary.f-14
+                              | #[small Diseñado por #[b maximopeoficiales]]
+
+
+
+     script(src='js/typed.js')
+     script(src='js/scrollreveal.min.js')
+     script(src='js/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+     script(src='js/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+     script(src='js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
+     script(src='js/configuraciontyped.js')
+     script(src='js/scripts.js')

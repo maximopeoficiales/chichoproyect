@@ -2,7 +2,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  --colorPrincipal: #8c39cf;
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -45,7 +47,7 @@ nav {
 .nav-item:hover a.nav-link {
   color: black;
   font-weight: bold;
-  border-bottom: solid 1.5px rgb(108, 99, 255);
+  border-bottom: solid 1.5px var(--colorPrincipal);
 }
 @media (max-width: 768px) {
   .nav-item {
@@ -123,7 +125,7 @@ nav {
   font-weight: 700;
 }
 .color-principal {
-  color: rgb(108, 99, 255) !important;
+  color: var(--colorPrincipal) !important;
 }
 
 /* cards */
@@ -205,7 +207,7 @@ nav {
   height: 100%;
   top: 0;
   transform: scale(0); /* oculta el efecto hover */
-  background-color: rgba(63, 61, 117, 0.349);
+  background-color: rgba(77, 19, 116, 0.418);
   transition: transform 0.5s;
   display: flex !important;
   /* centra perfectamento dentro del contenedor */
@@ -220,7 +222,7 @@ nav {
   text-decoration: none;
   width: 6.25rem;
   height: 6.25rem;
-  background-color: rgba(42, 35, 136, 0.562);
+  background-color: rgba(141, 88, 184, 0.952);
   display: flex;
   /* centra perfectamento dentro del contenedor */
   flex-direction: column;
@@ -230,7 +232,7 @@ nav {
   transition: all 0.5s;
 }
 .card-circle-span:hover {
-  background-color: rgb(75, 66, 250);
+  background-color: var(--colorPrincipal);
 }
 .card-circle-span i {
   color: white;
@@ -265,7 +267,7 @@ nav {
   transition: ease 0.3s;
 }
 .footer-social a:hover i {
-  color: rgb(108, 99, 255);
+  color: var(--colorPrincipal);
 }
 .footer-bottom p:nth-child(1) {
   font-size: 0.8rem;
