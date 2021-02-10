@@ -31,3 +31,18 @@ sr.reveal(".contacto_m", {
   origin: "left",
   distance: "100px" /* distancia desde arriba en este caso */,
 });
+
+const number = "51928644700";
+const api_wsp = `https://api.whatsapp.com/send/?phone=${number}&text=`;
+const nombre = document.querySelector("#nombre_form");
+const correo = document.querySelector("#form_correo");
+const mensaje = document.querySelector("#form_mensaje");
+document.querySelector("#form_enviar_mensaje").addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (nombre.value != "" && correo.value != "" && mensaje.value != "") {
+
+    let url = `${api_wsp}Hola soy ${nombre.value} queria decirte: ${mensaje.value}, cualquier cosa me puede contactar por aqui: ${correo.value}`;
+    window.open(url, "Contancto");
+  }
+  return null;
+})
