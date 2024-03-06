@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mi Calendario
+X-WR-TIMEZONE:America/Lima
+BEGIN:VEVENT
+DTSTART;TZID=America/Lima:20240427T200000
+DTEND;TZID=America/Lima:20240427T210000
+SUMMARY:Baby Shower Max Alexander
+DESCRIPTION:Ubicación: Calle Andrés Avelino Cáceres 945\, VMT (Referencia 
+ La 96)\nLista de regalos:\nContacto: +51928644700
+LOCATION:https://maps.app.goo.gl/6AfKoQfL9xXCEUUK6
+END:VEVENT
+END:VCALENDAR
